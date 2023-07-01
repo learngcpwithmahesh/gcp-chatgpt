@@ -1,3 +1,4 @@
+import os
 import csv
 import uuid
 import datetime
@@ -62,3 +63,4 @@ if errors == []:
     print('Data inserted successfully.')
 else:
     print('Encountered errors while inserting data: {}'.format(errors))
+os.remove(temp_file_path)    
